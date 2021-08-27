@@ -8,7 +8,7 @@ function CompetitionHome() {
 
     const [selectedSeason, setSelectedSeason] = useState("Current")
     const [selectedOrganisation, setSelectedOrganisation] = useState("All")
-    const [leagueLinks, setLeagueLinks] = useState({})
+    const [leagueLinks, setLeagueLinks] = useState([])
 
     const handleSeasonChange = (event) => {
         setSelectedSeason(event.value)

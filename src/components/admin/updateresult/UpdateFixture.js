@@ -18,7 +18,7 @@ const UpdateFixture = () => {
     React.useEffect(() => {
 
         if (!divisionsLoading) {
-            fetch('https://tjrlh6izkj.execute-api.eu-west-2.amazonaws.com/production/divisions?season=' + 2020 + '&organisation=TALBA')
+            fetch('https://tjrlh6izkj.execute-api.eu-west-2.amazonaws.com/production/divisions?season=' + 2019 + '&organisation=TALBA')
                 .then(results => {
                     if (!results.ok) {
                         throw new Error('Something went wrong')
@@ -64,7 +64,7 @@ const UpdateFixture = () => {
                 {
                     fixtureData ?
                         <div>
-                            <SeasonFixturesComponent seasonsFixturesParam={fixtureData} editable={true}/>
+                            <SeasonFixturesComponent seasonsFixturesParam={fixtureData} editable={true} />
                         </div >
                         :
                         <div> Loading</div>
