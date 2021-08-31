@@ -90,8 +90,6 @@ function CompetitionHome() {
             })}></CompetitionDisplayPanel>
             <CompetitionDisplayPanel competionTypeParam='Friendly' linksParam={friendlyFixtureGroups.map((fixtureGroup, index) => {
 
-                console.log(fixtureGroup)
-
                 const newQueryParam = {
                     fixtureGroupId: fixtureGroup.id,
                     fixtureGroupName: fixtureGroup.name
